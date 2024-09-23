@@ -2,7 +2,8 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Backend som indeholder endpoint som kaldes fra frontend, for at sende den bookede tour til rabbitMQ.",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.10.4",
+    "cors": "^2.8.5",
     "express": "^4.21.0"
   }
 }
